@@ -1,0 +1,72 @@
+*{
+    box-sizing: border-box;
+}
+h3{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    width: 120vh;
+}
+.main{
+    display: block;
+    margin-top: 10vh;
+    margin-left: 20vh;
+    width: 100vh;
+}
+.calc{
+    width: 15%;
+    transform: rotate(-25deg);
+    position: relative;
+    right: 30px;
+    animation: calc 2s linear;
+    animation-fill-mode: none;
+}
+.book{
+    width: 23%;
+    transform: rotate(-15deg);
+    position: relative;
+    top: -20px;
+    animation: calc 2s linear 0.5s;
+    animation-fill-mode: backwards;
+}
+.paper{
+    width: 23%;
+    transform: rotate(15deg);
+    position: relative;
+    top: -20px;
+    animation: calc 2s linear 1s;
+    margin-left: 10px;
+    animation-fill-mode: backwards;
+}
+.pallete{
+    width: 15%;
+    transform: rotate(220deg);
+    position: relative;
+    left: 30px;
+    animation: calc 2s linear 1.5s;
+    animation-fill-mode: backwards;
+}
+.pencil{
+    width: 15%;
+    position: relative;
+    top: 150px;
+    right: 47vh;
+    transform: rotate(90deg);
+    animation: pen 2s linear 2s;
+    animation-fill-mode: backwards;
+}
+@keyframes calc {
+    0%{  
+    top: 100vh; 
+}
+    100%{
+    top: 0;
+}
+}
+@keyframes pen {
+    0%{   
+    top: 100vh;
+}
+    100%{
+    top: 150px;
+}
+}

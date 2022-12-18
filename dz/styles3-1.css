@@ -1,0 +1,29 @@
+header>h3{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+ul{
+    list-style-type: none;
+    margin-bottom: 0;
+    padding-left: 0;
+}
+ul li{
+    display: inline-block;
+    margin: 10px;
+}
+.product{
+    position: relative; 
+    width: 120px;
+    border: solid 1px;
+    border-color: rgba(128, 128, 128, 0.5);
+    border-radius: 25px;
+    padding: 20px;
+
+}
+.info{
+    text-align: center;
+}
+p{
+    text-align: center;
+    font-weight: bolder;
+}

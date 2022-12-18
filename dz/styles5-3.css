@@ -1,0 +1,90 @@
+.wrapper{
+    margin-top: 30px;
+    text-align: center;
+}
+.plan{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: center;
+}
+.elem1, .elem2, .elem3, .elem4{
+    width: 200px;
+    height: 300px;
+    box-shadow: 0 0 10px rgb(97, 97, 97);
+    border-radius: 10px;
+    
+}
+*{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+}
+h4{
+    text-transform: uppercase;
+    margin-bottom: 0;
+}
+.price{
+    font-size: 35px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.pm{
+    color: rgba(0, 0, 0, 0.199);
+    margin-bottom: 10px;
+}
+.rt{
+    font-size: 11px;
+    font-weight: 800;
+    margin-bottom: 7px;
+}
+.b1, .b2, .b3, .b4{
+    text-transform: uppercase;
+    color: white;
+    width: 80px;
+    height: 25px;
+    margin-left: 55px;
+    padding-top: 7px;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 5px;
+    margin-top: 30px;
+}
+.b1, .hr1{
+    background-color: rgb(202, 6, 88); 
+}
+.hr1{
+    height: 1px;
+    border-color:rgb(202, 6, 88) ;
+}
+.b2, .hr2{
+    background-color: rgb(228, 160, 34); 
+}
+.hr2{
+    height: 1px;
+    border-color:rgb(228, 160, 34) ;
+}
+.b3, .hr3{
+    background-color: rgb(11, 116, 165); 
+}
+.hr3{
+    height: 1px;
+    border-color:rgb(11, 116, 165) ;
+}
+.b4, .hr4{
+    background-color: rgb(70, 196, 11); 
+}
+.hr4{
+    height: 1px;
+    border-color:rgb(70, 196, 11) ;
+}
+.plan>div:hover{
+    transition: 1s;
+    transform: scale(1.25,1.1);
+    background-color: rgb(255, 255, 255);
+    position: relative;
+    bottom: 50px;
+    padding-bottom: 10px;
+    top: 1px;
+    padding-top: 10px;
+}

@@ -1,0 +1,179 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+.left{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-top: 10px;
+    padding-left: 20px;
+}
+#mail{
+    text-transform: uppercase;
+}
+.right{
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding-top: 10px;
+    padding-right: 20px;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+}
+hr{
+    height: 3px;
+    background-color: rgb(209, 206, 206);
+    width: 100%;
+}
+ul{
+    list-style-type: none;
+    font-size: 13px;
+    margin: 0;
+}
+li{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 10px 5px 8px 10px;
+}
+li:hover{
+    background-color: rgb(232, 220, 243);
+}
+nav{
+    width: 15%;
+    display: inline-block;
+}
+li>img{
+    width: 20px;
+    height: 20px;
+}
+container{
+    width: 80%;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    font-size: 13px;
+    letter-spacing: 0.3px;
+}
+.main{
+    display: flex;
+    gap: 20px;
+}
+container>div{
+    display: flex;
+    flex-direction: row;
+    border-bottom: 1px solid;
+    border-color: rgb(230, 224, 224);
+    padding: 7px 0;
+
+}
+container>div>div:first-child{
+    width: 150px;
+    white-space: nowrap;
+}
+.center>div:nth-child(2){
+    color: rgba(128, 128, 128, 0.747);
+    padding-left: 5px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+container>div>div>img{
+    margin-right: 10px;
+}
+.center{
+    width: 80%;
+    display: flex;
+    align-content: center;
+    justify-content: flex-start;
+}
+container>div>div:last-child{
+    width: 100px;
+    display: flex;
+    justify-content: flex-end;
+}
+container>div:hover{
+    background-color: rgb(230, 224, 224);
+}
+.tema, .skrepka{
+    white-space: nowrap;
+}
+@media screen and (max-width: 800px){
+    container>div{
+        flex-direction: column;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        width: 100%;
+    }  
+    .center{
+        flex-direction: column;
+        margin-left: 33px;
+    }
+    ul{
+        padding: 10px;
+    }
+    #def{
+        display: none;
+    }
+    .center>div:nth-child(2){
+        padding-left: 0;
+    }
+    
+    .skrepka{
+        margin-left: 90%;
+        position: relative;
+        top: -80%;
+        left: -10%;
+    }
+    header>div>img{
+        width: 40px;
+        height: 40px;
+    }
+    li>img{
+        width: 30px;
+        height: 30px;
+    }
+    container>div>div>img{
+        margin-left: 10px;
+    }
+    container>div>div:last-child{
+        margin-bottom: -10px;
+        gap: 20px;
+    }
+    .main{
+        gap: 0;
+    }
+    nav{
+        width: 30%;
+    }
+    ul>li{
+        padding-right: 10px;
+    }
+    
+}
+@media screen and (max-width: 550px){
+    ul>li{
+        width: 50px;
+        overflow: hidden;
+    }
+    li>img{
+        width: 30px;
+        height: 30px;
+        margin-right: 10px;
+    }
+    .center>div{
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        width: 200px;
+    }
+    .skrepka{
+        margin-left: 80%;
+    
+    }
+}
